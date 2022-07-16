@@ -1,0 +1,20 @@
+$menu-bg: #DE4152;
+$menu-color: #ffffff;
+$menu-font-size: 2.5rem;
+$menu-zindex: 1100;
+$hamburger-color: #000;
+$hamburger-width: 50px;
+$hamburger-height: 50px;
+$hamburger-zindex: $menu-zindex + 10;
+
+.container {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.navLinks {
+  display: flex;
+  gap: 10px;
+}
+  
