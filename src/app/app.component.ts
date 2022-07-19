@@ -1,6 +1,8 @@
-import { Component, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { Component, NgModule, NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { CardComponent } from './component/card/card.component';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,8 +13,8 @@ export class AppComponent {
 
 
 NgModule({
-  imports: [NavbarComponent, FooterComponent],
+  imports: [NavbarComponent, FooterComponent, CardComponent],
   declarations: [],
   entryComponents: [],
-  schemas: [NO_ERRORS_SCHEMA]
+  schemas: [NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA]
 })
